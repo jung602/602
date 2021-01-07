@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900&display=swap');
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0 }
+body, input, textarea, select, button, table { font-size:24px; line-height:1.5em; font-family: 'Heebo', sans-serif; }
+html, body { height: 100%; padding:0; margin:0; }
+img, fieldset { border:0 }
+ul, ol { list-style:none }
+em, address { font-style:normal }
+a { text-decoration:none; color: #262626;}
+a:hover, a:active, a:focus {color: #262626;}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+
+/* top */
+.profile{position: absolute; left: 0; top:30px; font-size: 27px; width: 30px; height: 30px; position: absolute;}
+.profile > a{display: block; padding :10px; color:#0000ff;}
+.profile > a:hover{color: #1DDB54;}
+
+.header{width: 90.5%; margin: 0 auto; position: relative;}
+.header > p{text-align: center; padding: 120px 0 120px; font-size: 30px; line-height: 3vw; font-weight: 400;}
+
+.sns{position: absolute; right: 0; top: 50px;}
+.sns > a{font-size: 26px; display: inline-block; margin-left: 22px;}
+
+.first > a{text-decoration: underline; font-weight: 500; color: #262626;}
+.first > a:hover{color: #0000ff;}
+.first > k{font-size: 50%; color: #CCCCCC;}
+p.first {text-align: center; font-size: 38px; line-height: 1.3em; letter-spacing: -0.25px; color: #262626;}
+
+/* .h1 > a{color: black;} */
+/* h1{text-align: center; padding-top: 20px; font-size: 3vw; line-height: 3vw; font-family: 'Bad Script', cursive;} */
+
+
+/*main*/
+.contents {width: 92%; margin: 0 auto; padding: 5px 0px;}
+.contents > ul > li{float: left; width: 50%; text-align: center; padding-bottom: 35px;}
+.contents > ul > li > a > .img{display: block; overflow: hidden; position: relative; width: 96%; margin:0 auto 10px; background-color: #000; padding-top: 62%;}
+.contents > ul > li > a > .img > img{width:100%; position: absolute; left: 0; top: 0; min-height: 100%; transition: all .3s;}
+.contents > ul > li > a:hover > .img > img{opacity:.8; transform:scale(1.1); -webkit-transform:scale(1.1);}
+.contents > ul > li > a > .con{font-size: 24px;}
+@media (max-width: 800px) {
+.profile{top:16px; font-size: 19px; width: 36px; height: 36px;}
+.sns{top: 20px;}
+.sns > a{font-size: 20px; margin-left: 15px;}
+.contents > ul > li{width: 100%; padding-bottom: 30px;}
+p.first{font-size: 21px; width:80%; margin: 0 auto;}
+.header > p{padding: 62px 0 58px;}
+.contents > ul > li > a > .con{font-size: 18px;}
+.contents > ul > li > a > .img{margin:0 auto 3px;}
+}
+
+/*footer*/
+.footer {background-color: black; color: #ffffff; font-size:24px;}
+.footer_center {width: 90.5%; margin: 0px auto; padding: 25px 0px;}
+.footer_center > span{float: right;}
+@media (max-width: 800px) {
+	.footer {background-color: black; color: #ffffff; font-size:16px;}
+	.footer_center {padding: 5px 0px;}
+}
+
+
+/*프로필*/
+.backHome{text-align: center; font-weight: 700; padding: 100px 0 150px;}
+.backHome > a{color: #ccc; text-decoration: underline; font-size: 38px; font-weight: 600; letter-spacing: -0.25px;}
+.backHome > a:hover{color: #FF4F12}
+.pofileContents{width: 1170px; margin: 0 auto;}
+.pofileContentsR{width: 600px; float: left; padding-bottom: 500px; padding:0; box-sizing:border-box;}
+.pofileContentsL{width: 525px; float: left; text-align:left; padding-bottom:0;}
+.pofileContentsL img{width: 380px;}
+
+.pofileContentsR h5{font-size: 30px; padding-bottom: 14px; font-weight: 500; letter-spacing: -0.25px;}
+.pofileContentsR p{font-size: 24px; line-height: 38px;}
+.pofileContentsR p span{color: #ccc; font-weight:300; font-size: 23px;}
+.pofileContentsR p a{text-decoration: underline; font-weight: 500;}
+.pofileContentsR div{padding-bottom: 60px;}
+.pofileContentsR div:last-child{padding-bottom: 500px;}
+@media (max-width: 800px) {
+.pofileContents{width: 100%;}
+.pofileContentsL, .pofileContentsR{width: 100%;}
+.pofileContentsL{text-align:center; padding-bottom:13px;}
+.pofileContentsL img{width:75%;}
+.pofileContentsR{padding:45px 45px;}
+.pofileContentsR p{font-size: 15px; line-height: 23px;}
+.pofileContentsR p span{font-size: 16px;}
+.pofileContentsR h5{font-size: 19px; padding-bottom: 0px;}
+.backHome{text-align: center; font-weight: 700; padding: 60px 0;}
+.backHome > a{font-size: 21px;}
+.pofileContentsR div{padding-bottom: 30px;}
+.pofileContentsR div:last-child{padding-bottom: 150px;}
+}
+
+
+/*디테일*/
+.detailConW > .con{text-align: right; font-size: 24px; line-height: 40px; padding: 170px 0; width: 90%; margin: 0 auto; text-align: right;}
+.detailConW > .con > p{width: 52%; display: inline-block; /*text-align: justify;*/  text-align: right; }
+.detailConW > .con > p > span{color: #ccc;}
+.detailConW > .img{text-align: center;}
+.detailConW > .img > img{ width: 70%;}
+.detailConW > .img > video{ width: 70%;}
+.detailConW > .img2{text-align: center;}
+.detailConW > .img2 > img{width:40%;}
+.detailConW > .vd {text-align: center; margin-bottom: -20px;}
+.detailConW > .vd > video{ width: 70%;}
+.detailContents h3 span{font-weight: 400; font-size: 24px;}
+.detailContents h3{text-align: center; padding-bottom: 60px; font-size: 28px; line-height:36px;}
+.detailContents > h3 k{font-weight: 400; font-size: 50%; color: #CCCCCC;}
+@media (max-width: 800px) {
+.detailContents h3 span{ font-size: 18px;}
+.detailContents h3{padding-bottom: 30px; font-size: 21px; line-height:26px;}
+.detailConW > .img > img{ width: 100%; }
+.detailConW > .con{text-align: right; font-size: 18px; line-height: 26px; padding: 60px 0; width: 90%; margin: 0 auto; text-align: right;}
+.detailConW > .con > p{text-align: justify; width: 100%;}
+.detailConW > .img2 > img{width:100%;}
+.detailConW > .vd > video{ width: 100%;}
+}
