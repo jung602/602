@@ -1,0 +1,146 @@
+  
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0 }
+html, body { 
+    z-index: -3;
+    background-image:linear-gradient(to bottom, black, rgba(10, 10, 10, 0.2));    
+    position: relative;
+    color:white; padding:0; margin:0; word-break: keep-all; }
+img, fieldset { border:0; max-width: 100%;}
+ul, ol { list-style:none; }
+em, address { font-style:normal }
+a { text-decoration:none; color: #ffffff;}
+a:hover, a:active, a:focus {color: #ffffff;}
+
+h3{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: -0.1px;
+    margin:0;
+    padding:0;
+}
+
+.content{
+    width: 100vw;
+    height: 95vh;
+}
+.foot{
+    padding: 10px 2%;
+    border-width: 1px;
+    border-top-style: solid;
+    width: 100vw;
+    vertical-align: top;
+    height: 5vh;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: -0.1px;
+}
+
+
+th {
+    text-align: center;
+    padding-top:20px;
+    vertical-align: top;
+}
+
+.contentd{
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom:20px;
+}
+
+.footd{
+    vertical-align: top;
+}
+
+
+.footext{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns{
+    text-decoration: underline;
+}
+
+.snstext{
+    padding-left: 10px;
+}
+.logo{
+    text-align: center;
+    font-family: ambroise-francois-std, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 120px;
+    letter-spacing: -0.1px;
+    line-height: 0.8;
+}
+
+#timer{
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20vw;
+    letter-spacing: -0.1px;
+}
+
+.bg{
+    z-index: -2;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;;
+    height: 100%;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("bloom.gif");
+
+}
+
+.blur{
+    z-index: -1;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.8);
+    -webkit-backdrop-filter:saturate(300%) blur(10px);
+    backdrop-filter: saturate(300%) blur(10px);
+}
+@media (max-width: 900px) {
+    .logo{
+        font-size:80px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .foot{
+        height: 10vh;
+        font-size: 14px; 
+    }
+    .content{
+        height: 90vh;
+    }
+    .bg{
+        background-size: auto 100%;
+    }
+    .footext{
+        text-align: center;
+        display: block;
+        
+    }
+    .sns{
+        padding-top:10px;
+    }
+
+}
