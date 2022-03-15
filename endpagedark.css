@@ -56,7 +56,7 @@ html {
 a,
 p,
 b {
-  color: var(--fg-90);
+  color: var(--fg-100);
   line-height: var(--body-line-height);
   font-size: var(--body-size);
   font-style: normal;
@@ -164,6 +164,7 @@ td {
 }
 
 .home {
+    color: var(--fg-100);
     position: fixed;
     top: 60px;
     left: 40px;
@@ -204,7 +205,7 @@ td {
 
     .home {
         width: 100%;
-        background: linear-gradient(rgba(250,250,250,1),90%, rgba(250,250,250,0));
+        background: linear-gradient(rgba(10,10,10,1),90%, rgba(10,10,10,0));
         top: 0;
         left: 0;
         padding-top: 32px;
