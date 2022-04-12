@@ -26,6 +26,64 @@
 }
 
 
+.semiTitle {
+  margin: 0 60px;
+  padding-top:80px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+}
+
+.context{
+  margin: 0 60px;
+  padding-top: 10px;
+}
+
+
+.layoutA .layout-content-wrapper {
+    display: flex;
+}
+
+.layoutA .layout-content-wrapper .img-wrap, .layoutA .layout-content-wrapper .video-module {
+    width: 100%;
+    padding-top:30px;
+    margin: 0 20px;
+}
+
+.layoutC .layout-content-wrapper {
+    display: flex;
+}
+
+.layoutC .layout-content-wrapper .img-wrap, .layoutC .layout-content-wrapper .video-module {
+    width: 100%;
+}
+
+.img-wrap > img{
+  max-width: 100%;
+  border: 1px solid var(--fg-10);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/*C1*/
+
+.layoutC.layoutC1 .layout-content-wrapper .contents {
+    text-align: center;
+    padding-top:30px;
+    margin: 0 20px;
+    width: 50%;
+}
+
+/*C2*/
+
+
+.layoutC.layoutC2 .layout-content-wrapper .contents {
+  text-align: center;
+  padding-top:30px;
+    margin: 0 20px;
+    width: calc(100% / 3);
+}
 
 
 
@@ -136,6 +194,8 @@ td {
 }
 
 
+
+
 .landing{
   opacity: 0;
   animation: loadIn 0.8s 0.5s forwards;
@@ -180,6 +240,7 @@ td {
 
 
 @media (max-width: 1060px) {
+
 
 
     .content {
@@ -233,5 +294,54 @@ td {
         font-size: var(--min-mobile-size);
     }
 
+    .layoutC.layoutC1 .layout-content-wrapper .contents {
+        margin: 0 10px;
+    }
 
+    .layoutC.layoutC2 .layout-content-wrapper .contents {
+        margin: 0 10px;
+    }
+
+    .layoutA .layout-content-wrapper .img-wrap, .layoutA .layout-content-wrapper .video-module {
+        margin: 0 10px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .semiTitle {
+    margin: 0px;
+    padding-top:60px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+  }
+
+  .context{
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .layoutA .layout-content-wrapper .img-wrap, .layoutA .layout-content-wrapper .video-module {
+      margin: 0px;
+  }
+
+    .layoutC .layout-content-wrapper {
+        display: block;
+    }
+
+    .layoutC.layoutC1 .layout-content-wrapper .contents {
+        margin: 0;
+        width: 100%;
+        padding-top:20px;
+    }
+
+    .layoutC.layoutC2 .layout-content-wrapper .contents {
+        margin: 0px;
+        width: 100%;
+        padding-top:20px;
+    }
 }
