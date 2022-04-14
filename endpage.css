@@ -233,6 +233,7 @@ td {
     padding: 12px 12px 12px 12px;
     background-color:white;
     z-index:1000;
+    cursor:pointer;
 }
 
 .home {
