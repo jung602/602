@@ -313,19 +313,19 @@ td {
     }
 
     .layoutC.layoutC1 .layout-content-wrapper .contents {
-        margin: 0 10px;
+        margin: 0 6px;
     }
 
     .layoutC.layoutC2 .layout-content-wrapper .contents {
-        margin: 0 10px;
+        margin: 0 6px;
     }
 
     .layoutC.layoutC22 .layout-content-wrapper .contents {
-        margin: 0 10px;
+        margin: 0 4px;
     }
 
     .layoutA .layout-content-wrapper .img-wrap, .layoutA .layout-content-wrapper .video-module {
-        margin: 0 10px;
+        margin: 0 6px;
     }
 
 }
