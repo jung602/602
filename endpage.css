@@ -183,6 +183,7 @@ td {
     padding-left: 40px;
     padding-bottom: 24px;
     text-align: left;
+    z-index: 999;
 }
 
 .home > a {
