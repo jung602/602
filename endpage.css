@@ -39,6 +39,7 @@ html {
 a,
 p,
 b {
+  line-height: var(--body-line-height);
   color: var(--fg-90);
   font-size: var(--body-size);
   font-style: normal;
