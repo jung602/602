@@ -72,7 +72,7 @@ p {
 k {
     font-size: var(--min-size);
     color: var( --fg-50);
-    font-weight: 100;
+    font-weight: 500;
 }
 
 table {
