@@ -11,8 +11,8 @@ body{
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-  width: 400px;
-  height: 770px;
+  width: 500px;
+  height: 963px;
   perspective: 1100px;
 }
 
@@ -34,15 +34,15 @@ transform: translate(-50%,-50%);
 
 .front {
   background-image: url(./front.jpg);
-  background-size: 400px 770px;
+  background-size: 500px 963px;
 }
 
 .back {
   background-image: url(./back.jpg);
-  background-size: 400px 770px;
+  background-size: 500px 963px;
   transform: rotateY(180deg);
 }
 
-.flip:hover .card {
+.flip:checked + label .card {
   transform: rotateY(180deg);
 }
