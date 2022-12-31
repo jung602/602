@@ -43,6 +43,32 @@ transform: translate(-50%,-50%);
   transform: rotateY(180deg);
 }
 
-.flip:checked + label .card {
+.flip:hover .card {
   transform: rotateY(180deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .flip:hover .card {
+    transform: rotateY(180deg);
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .flip {
+    width: 800px;
+    height: 1540px;
+  }
+
+  .front {
+    background-size: 800px 1540px;
+  }
+
+  .back {
+    background-size: 800px 1540px;
+  }
+
+
 }
