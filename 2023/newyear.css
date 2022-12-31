@@ -49,7 +49,7 @@ transform: translate(-50%,-50%);
 
 @media (hover: hover) and (pointer: fine) {
 
-  .flip:hover .card {
+  .flip:active .card {
     transform: rotateY(180deg);
   }
 
