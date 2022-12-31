@@ -54,3 +54,21 @@ transform: translate(-50%,-50%);
   }
 
 }
+
+@media (max-width: 640px) {
+
+  .flip {
+    width: 300px;
+    height: 578px;
+  }
+
+  .front {
+    background-size: 300px 578px;
+  }
+
+  .back {
+    background-size: 300px 578px;
+  }
+
+
+}
