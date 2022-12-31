@@ -1,4 +1,4 @@
-
+@import "reset.css";
 
 body{
  width: 100%;
@@ -11,8 +11,8 @@ body{
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-  width: 500px;
-  height: 963px;
+  width: 400px;
+  height: 770px;
   perspective: 1100px;
 }
 
@@ -34,12 +34,12 @@ transform: translate(-50%,-50%);
 
 .front {
   background-image: url(./front.jpg);
-  background-size: 500px 963px;
+  background-size: 400px 770px;
 }
 
 .back {
   background-image: url(./back.jpg);
-  background-size: 500px 963px;
+  background-size: 400px 770px;
   transform: rotateY(180deg);
 }
 
